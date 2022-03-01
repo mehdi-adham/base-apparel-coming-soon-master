@@ -8,6 +8,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 </head>
 
@@ -28,12 +29,19 @@
         <h3>coming soon</h3>
         <p>Hello fellow shoppers! We're currently building our new fashion store.
           Add your email below to stay up-to-date with announcements and our launch deals.</p>
-        <form action="#" class="flex relative">
-          <input id="email" type="email" name="email" id="eamil" placeholder="Email Address"
-            required>
+        <!-- JavaScript Form Validation
+                https://www.w3schools.com/js/js_validation.asp 
+              1. onsubmit="return formvaldate();"-->
+        <form name="emailform" action="#" onsubmit="return validateForm();" class="flex relative">
+          <!-- Remove Automatic HTML Form Validation 
+               required (for empty field) and 
+               type="email" (for regular expression) -->
+          <input id="email" type="text" name="email" id="eamil" placeholder="Email Address" >
+
           <input type="submit" value="">
-          <img id="error-icon" class="error-icon" src="images/icon-error.svg" alt="">
-          <p id="error-txt" class="error-txt">Pleas provide a valid email</p>
+          <!-- <button type='submit'></button> -->
+          <img id="error-icon" class="error-icon hidden" src="images/icon-error.svg" alt="">
+          <p id="error-txt" class="error-txt hidden"></p>
         </form>
       </div>
 
@@ -42,5 +50,6 @@
   </main>
 
 </body>
+<script src="/validation.js"></script>
 
 </html>

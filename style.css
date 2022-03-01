@@ -97,7 +97,7 @@ main {
   line-height: 1.35rem;
   color: var(--Desaturated-Red);
 }
-.desc-item input[type="email"] {
+.desc-item input[type="text"] {
   border: solid 1px #c8c8c8;
   padding: 14px 1.5rem;
   padding-right: 6rem;
@@ -118,6 +118,9 @@ main {
   background-color: #f19b9c;
   box-shadow: 0 14px 10px rgba(241, 155, 156, 0.3);
 }
+input:hover[type="submit"] {
+  cursor: pointer;
+}
 .desc-item ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: var(--Desaturated-Red);
@@ -126,11 +129,11 @@ main {
   /* Microsoft Edge */
   color: var(--Desaturated-Red);
 }
-.desc-item input[type="email"]:focus {
+.desc-item input[type="text"]:focus {
   outline: none;
 }
 
-
+/* HTML Form Validation with js - CSS*/
 /* Start error class*/
 .error-icon {
   position: absolute;
@@ -146,15 +149,20 @@ main {
 .error-border {
   border: solid 1px red !important;
 }
-.error-txt{
-    color: #f19b9c !important;
-    font-size: 12px !important;
-    position: absolute;
-    bottom: -24px;
-    left: 24px;
-    letter-spacing: -0.5px;
+.error-txt {
+  color: #f19b9c !important;
+  font-size: 12px !important;
+  position: absolute;
+  top: 3rem;
+  left: 24px;
+  letter-spacing: -0.5px;
 }
 /* End error class*/
+
+/* For Automatic HTML Form Validation */
+/* https://www.w3schools.com/js/js_validation.asp */
+
+/* --------------------------------- */
 
 
 .flex {
