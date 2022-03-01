@@ -51,8 +51,17 @@ main {
     "desc-item cover-item";
   grid-template-columns: 3fr 2.2fr;
   margin: 6.5rem auto;
-  background: url(images/bg-pattern-desktop.svg) no-repeat;
-  /*background-position: top 0 left 0;*/
+
+  /*CSS Multiple Backgrounds*/
+  background-image: url(images/bg-pattern-desktop.svg),
+    linear-gradient(
+      135deg,
+      hsl(0, 0%, 100%),
+      hsl(0, 100%, 98%),
+      hsl(0, 80%, 86%),
+      hsl(0, 74%, 74%)
+    );
+  background-repeat: no-repeat;
   background-size: contain;
 }
 
@@ -74,7 +83,7 @@ main {
 }
 .desc-item {
   grid-area: desc-item;
-  margin-bottom: 3.7rem;
+  margin-bottom: 3.9rem;
 }
 
 .desc-item h2 {
@@ -160,10 +169,12 @@ input:hover[type="submit"] {
 /* End error class*/
 
 /* For Automatic HTML Form Validation */
-/* https://www.w3schools.com/js/js_validation.asp */
+/* https://www.w3schools.com/js/js_validation.asp 
 
-/* --------------------------------- */
+:invalid{
+}
 
+ --------------------------------- */
 
 .flex {
   display: flex;
@@ -185,6 +196,7 @@ input:hover[type="submit"] {
       "desc-item";
     /*grid-template-columns: 1fr 0;*/
     margin: 6.5rem auto;
+    background: unset;
   }
   .cover-item {
     height: 250px;
