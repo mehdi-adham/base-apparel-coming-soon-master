@@ -69,8 +69,8 @@ main {
 .logo-item {
   grid-area: logo-item;
 }
-.logo-item img{
-    width: 125px;
+.logo-item img {
+  width: 125px;
 }
 .desc-item {
   grid-area: desc-item;
@@ -93,7 +93,7 @@ main {
 }
 .desc-item p {
   margin: 18px 0;
-  font-size: 13px/*0.81em*/;
+  font-size: 13px /*0.81em*/;
   line-height: 1.35rem;
   color: var(--Desaturated-Red);
 }
@@ -129,6 +129,34 @@ main {
 .desc-item input[type="email"]:focus {
   outline: none;
 }
+
+
+/* Start error class*/
+.error-icon {
+  position: absolute;
+  right: 5.5rem;
+  width: 20px;
+}
+.view {
+  display: block;
+}
+.hidden {
+  display: none;
+}
+.error-border {
+  border: solid 1px red !important;
+}
+.error-txt{
+    color: #f19b9c !important;
+    font-size: 12px !important;
+    position: absolute;
+    bottom: -24px;
+    left: 24px;
+    letter-spacing: -0.5px;
+}
+/* End error class*/
+
+
 .flex {
   display: flex;
   align-items: center;
