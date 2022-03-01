@@ -53,13 +53,14 @@ main {
   margin: 6.5rem auto;
 
   /*CSS Multiple Backgrounds*/
+  /* linear-gradient
+  https://www.w3schools.com/csSref/func_linear-gradient.asp */
   background-image: url(images/bg-pattern-desktop.svg),
     linear-gradient(
       135deg,
       hsl(0, 0%, 100%),
       hsl(0, 100%, 98%),
-      hsl(0, 80%, 86%),
-      hsl(0, 74%, 74%)
+      hsl(0, 80%, 86%)
     );
   background-repeat: no-repeat;
   background-size: contain;
