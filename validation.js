@@ -13,8 +13,8 @@ function validateForm() {
   let error_txt_el = document.forms["emailform"]["error-txt"];*/
   let error_icon_el = document.getElementById("error-icon");
   let error_txt_el = document.getElementById("error-txt");
-  error_txt_el.innerText = "";
 
+  error_txt_el.innerText = "";
   if (require(email_el.value)) {
     error_txt_el.innerText += empty_error;
     email_el.classList.add( "error-border");
