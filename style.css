@@ -42,10 +42,6 @@ main {
 }
 
 .comming-soon {
-  /*max-width: 1150px;
-  min-width: 900px;*/
-  width: 100%;
-  /*height: 100vh;*/
   display: grid;
   grid:
     "logo-item cover-item"
@@ -204,7 +200,7 @@ input:hover[type="submit"] {
     background-color: hsl(0, 100%, 98%);
   }
   .cover-item {
-    height: 250px;
+   height: 40vh;
     grid-area: cover-item;
     background: url(images/hero-mobile.jpg) no-repeat;
     background-size: contain;
