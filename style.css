@@ -42,15 +42,16 @@ main {
 }
 
 .comming-soon {
-  max-width: 1150px;
-  min-width: 900px;
+  /*max-width: 1150px;
+  min-width: 900px;*/
   width: 100%;
+  /*height: 100vh;*/
   display: grid;
   grid:
     "logo-item cover-item"
     "desc-item cover-item";
   grid-template-columns: 3fr 2.2fr;
-  margin: 6.5rem auto;
+  /*margin: 6.5rem auto;*/
 
   /*CSS Multiple Backgrounds*/
   /* linear-gradient
@@ -68,8 +69,8 @@ main {
 
 .logo-item,
 .desc-item {
-  padding: 3.2rem 8.2rem;
-  padding-right: 11.3rem;
+  padding: 3.8rem 9.6rem;
+  padding-right: 13rem;
 }
 .cover-item {
   grid-area: cover-item;
@@ -80,48 +81,50 @@ main {
   grid-area: logo-item;
 }
 .logo-item img {
-  width: 125px;
+  width: 145px;
 }
 .desc-item {
   grid-area: desc-item;
-  margin-bottom: 3.9rem;
+  margin-bottom: 4.5rem;
 }
 
 .desc-item h2 {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 4rem;
+  margin-top: 0;
+  letter-spacing: 13px;
+  line-height: 4.1rem;
+}
+.no-bolder{
+  font-weight: 300;
   color: var(--Desaturated-Red);
 }
-.desc-item h2,
-.desc-item h3 {
-  font-size: 3.2em;
-  font-weight: 300;
-  letter-spacing: 14px;
-  text-transform: uppercase;
-  line-height: 3.4rem;
-}
-.desc-item h3 {
-  font-weight: 600;
-}
+
 .desc-item p {
   margin: 18px 0;
-  font-size: 13px /*0.81em*/;
-  line-height: 1.35rem;
+  font-size: 15px /*0.81em*/;
+  line-height: 1.6rem;
   color: var(--Desaturated-Red);
 }
 .desc-item input[type="text"] {
   border: solid 1px #c8c8c8;
-  padding: 14px 1.5rem;
+  /*padding: 14px 1.5rem;*/
+  padding:1.1rem 1.8rem;
   padding-right: 6rem;
   border-radius: 30px;
-  margin: 16px 0;
+  /*margin: 2.2rem 0;*/
+  margin: 1.2rem 0;
   width: 100%;
   color: var(--Desaturated-Red);
+  background: transparent;
 }
 .desc-item input[type="submit"] {
   position: absolute;
-  right: -5px;
+  right: 0;
   border: 0;
-  width: 5rem;
-  padding: 15px 1.5rem;
+  width: 22%;
+  padding: 1.1rem 1.5rem;
   border-radius: 30px;
   background: url(images/icon-arrow.svg) no-repeat center;
   background-size: 10px;
@@ -147,8 +150,8 @@ input:hover[type="submit"] {
 /* Start error class*/
 .error-icon {
   position: absolute;
-  right: 5.5rem;
-  width: 20px;
+  right: 24%;
+  width: 24px;
 }
 .view {
   display: block;
@@ -161,11 +164,11 @@ input:hover[type="submit"] {
 }
 .error-txt {
   color: #f19b9c !important;
-  font-size: 12px !important;
+  font-size: 14px !important;
   position: absolute;
-  top: 3rem;
-  left: 24px;
-  letter-spacing: -0.5px;
+  top: 3.6rem;
+  left: 1.8rem;
+  letter-spacing: -0.7px;
 }
 /* End error class*/
 
@@ -187,8 +190,8 @@ input:hover[type="submit"] {
 
 @media screen and (max-width: 480px) {
   .comming-soon {
-    max-width: 480px;
-    min-width: 350px;
+    /*max-width: 480px;
+    min-width: 350px;*/
     width: 100%;
     display: grid;
     grid:
@@ -196,8 +199,9 @@ input:hover[type="submit"] {
       "cover-item"
       "desc-item";
     /*grid-template-columns: 1fr 0;*/
-    margin: 6.5rem auto;
+    margin: 0;
     background: unset;
+    background-color: hsl(0, 100%, 98%);
   }
   .cover-item {
     height: 250px;
@@ -207,9 +211,21 @@ input:hover[type="submit"] {
   }
   .logo-item,
   .desc-item {
-    padding: 3.1rem 2rem;
+    padding: 1.85rem;
   }
   .desc-item {
     text-align: center;
+  }
+  .logo-item img {
+    width: 100px;
+  }
+  .desc-item h2 {
+    font-size: 2.7em;
+    margin-top: 2rem;
+    line-height: 2.7rem;
+    letter-spacing: 9px;
+  }
+  .desc-item p {
+    line-height: 1.3rem;
   }
 }
