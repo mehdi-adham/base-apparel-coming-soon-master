@@ -46,8 +46,7 @@ main {
   grid:
     "logo-item cover-item"
     "desc-item cover-item";
-  grid-template-columns: 3fr 2.2fr;
-  /*margin: 6.5rem auto;*/
+  grid-template-columns: 3fr 2.19fr;
 
   /*CSS Multiple Backgrounds*/
   /* linear-gradient
@@ -70,9 +69,11 @@ main {
 }
 .cover-item {
   grid-area: cover-item;
-  background: url(images/hero-desktop.jpg) no-repeat;
-  background-size: contain;
 }
+.cover-item img{
+  width:100%;
+}
+
 .logo-item {
   grid-area: logo-item;
 }
@@ -186,24 +187,17 @@ input:hover[type="submit"] {
 
 @media screen and (max-width: 480px) {
   .comming-soon {
-    /*max-width: 480px;
-    min-width: 350px;*/
     width: 100%;
     display: grid;
     grid:
       "logo-item"
       "cover-item"
       "desc-item";
-    /*grid-template-columns: 1fr 0;*/
     margin: 0;
     background: unset;
-    background-color: hsl(0, 100%, 98%);
   }
   .cover-item {
-   height: 40vh;
     grid-area: cover-item;
-    background: url(images/hero-mobile.jpg) no-repeat;
-    background-size: contain;
   }
   .logo-item,
   .desc-item {
@@ -211,6 +205,9 @@ input:hover[type="submit"] {
   }
   .desc-item {
     text-align: center;
+    background-color: hsl(0, 100%, 98%);
+    min-height: 100vh;
+    margin-bottom: 0;
   }
   .logo-item img {
     width: 100px;
